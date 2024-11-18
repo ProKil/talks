@@ -1,6 +1,6 @@
 {
   "name": "slidev-theme-minerva",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "keywords": [
     "slidev-theme",
@@ -18,12 +18,7 @@
   "dependencies": {
     "@slidev/cli": "<0.50.0",
     "@slidev/client": "<0.50.0",
-    "@slidev/theme-default": "latest",
-    "@slidev/theme-seriph": "latest",
     "@unocss/preset-uno": "^0.64.0",
-    "lucide-vue-next": "^0.456.0",
-    "markdown-it-magic-link": "^0.1.4",
-    "seedrandom": "^3.0.5",
     "vue": "^3.5.12"
   },
   "devDependencies": {

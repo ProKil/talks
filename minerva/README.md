@@ -1,4 +1,4 @@
-# Hao's Slidev Theme
+# Slidev Theme Minerva
 
 This is the theme I use for my presentations.
 The major features are:
