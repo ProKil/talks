@@ -1,0 +1,21 @@
+{
+  "name": "2024-11-14-cs329x",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "dev": "slidev --open",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@slidev/cli": "<0.50.0",
+    "@slidev/client": "<0.50.0",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "@unocss/preset-uno": "^0.64.0",
+    "lucide-vue-next": "^0.456.0",
+    "markdown-it-magic-link": "^0.1.4",
+    "seedrandom": "^3.0.5",
+    "vue": "^3.5.12"
+  }
+}

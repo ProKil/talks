@@ -1,0 +1,43 @@
+{
+  "name": "slidev-theme-my-theme",
+  "version": "0.0.0",
+  "type": "module",
+  "keywords": [
+    "slidev-theme",
+    "slidev"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "slidev build example.md",
+    "dev": "slidev example.md --open",
+    "export": "slidev export example.md",
+    "screenshot": "slidev export example.md --format png"
+  },
+  "dependencies": {
+    "@slidev/cli": "<0.50.0",
+    "@slidev/client": "<0.50.0",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "@unocss/preset-uno": "^0.64.0",
+    "lucide-vue-next": "^0.456.0",
+    "markdown-it-magic-link": "^0.1.4",
+    "seedrandom": "^3.0.5",
+    "vue": "^3.5.12"
+  },
+  "devDependencies": {
+    "@slidev/cli": "<0.50.0"
+  },
+  "//": "Learn more: https://sli.dev/guide/write-theme.html",
+  "slidev": {
+    "colorSchema": "both",
+    "defaults": {
+      "fonts": {
+        "sans": "Geist",
+        "serif": "EB Garamond",
+        "mono": "Fira Code"
+      }
+    }
+  }
+}

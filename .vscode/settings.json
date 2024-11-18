@@ -1,0 +1,6 @@
+{
+    "slidev.include": [
+        "**/slides.md",
+        "my-theme/example.md"
+    ]
+}

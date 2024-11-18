@@ -1,0 +1,44 @@
+:root {
+  /* default theme color */
+  /* can be overrided by uses `themeConfig` option */
+  --slidev-theme-primary: 222.2 47.4% 11.2%;
+  --warning: 38 92% 50%;
+  --warning-foreground: 48 96% 89%;
+  --muted: 210 40% 96.1%;
+  --card: 0 0% 100%;
+  --popover: 0 0% 100%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --primary: 222.2 47.4% 11.2%;
+  --secondary: 210 40% 96.1%;
+  --accent: 210 40% 96.1%;
+  --ring: 215 20.2% 65.1%;
+  --radius: 0.5rem;
+  --un-default-border-color: 214.3 31.8% 91.4%;
+}
+
+:root.dark {
+  --slidev-theme-primary: #ffffff;
+  --warning: 48 96% 89%;
+  --muted: 240 3.7% 15.9%;
+  --un-default-border-color: 240 3.7% 15.9%;
+}
+
+.slidev-layout.cover,
+.slidev-layout.intro {
+  @apply h-full grid;
+
+  h1 {
+    @apply text-6xl leading-20;
+  }
+
+  h1 + p {
+    @apply -mt-2 opacity-50 mb-4;
+  }
+
+  p + h2,
+  ul + h2,
+  table + h2 {
+    @apply mt-10;
+  }
+}
