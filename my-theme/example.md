@@ -4,26 +4,31 @@ layout: halfnhalf
 font:
     sans: "Geist"
     serif: "EB Garamond"
-title: Hao's Template
+title: Minerva Theme 
 author: Hao Zhu
 hideInToc: true
 favicon: /favicon.svg
 titleTemplate: "%s"
+class: "flex items-center justify-center"
 ---
 
 
 ::left::
-# Slidev Theme Starter
 
-Presentation slides for developers
+<div text-right>
+<h1> Academic Talk Template </h1>
+<div>
+  Try this template for your academic talks
 
-::right::
-<div class="pt-12">
-  <span @click="next" class="px-2 p-1 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
-    Press Space for next page <carbon:arrow-right class="inline"/>
-  </span>
 </div>
 
+
+</div>
+
+::right::
+  <div @click="next" class="mt-auto ml-auto p-1 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
+    Press Space for next page <carbon:arrow-right class="inline"/>
+  </div>
 
 ---
 layout: halfnhalf
@@ -63,7 +68,6 @@ Available Layouts
 ---
 layout: onetwo
 routAlias: Navigation
-# title: Navigation
 ---
 
 ::left::
