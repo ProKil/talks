@@ -7,6 +7,8 @@ font:
 title: Hao's Template
 author: Hao Zhu
 hideInToc: true
+favicon: /favicon.svg
+titleTemplate: "%s"
 ---
 
 
