@@ -20,7 +20,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: ./my-theme
+        working-directory: ./minerva
 
     steps:
       - uses: actions/checkout@v4
@@ -43,7 +43,7 @@ jobs:
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: my-theme/dist
+          path: minerva/dist
 
   deploy:
     environment:
