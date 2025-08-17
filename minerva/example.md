@@ -1,7 +1,7 @@
 ---
 theme: ./
-layout: halfnhalf
-title: Minerva Theme 
+layout: intro
+title: Minerva Theme
 author: Hao Zhu
 hideInToc: true
 favicon: /favicon.svg
@@ -35,7 +35,7 @@ hideInToc: true
 
 
 ::left::
-# Table of Content 
+# Table of Content
 
 ::right::
 
