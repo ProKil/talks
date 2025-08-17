@@ -28,15 +28,21 @@ import ContentBase from './content-base.vue'
 <style scoped>
 
 .figure {
-  grid-area: 2 / 6 / 7 / 13;   /* Adjusted for new 11-row grid */
+  grid-area: 2 / 8 / 7 / 16;   /* Swiss: expanded right figure using more width */
+  border: none !important;     /* Remove decorative borders */
+  border-radius: 0 !important; /* Remove rounded corners */
+  padding: 0 !important;
 }
 
 .text {
-  grid-area: 7 / 3 / 9 / 13;   /* Adjusted for new 11-row grid */
+  grid-area: 7 / 3 / 9 / 16;   /* Swiss: expanded text spanning bottom using more width */
+  text-align: left;
+  font-size: 0.875rem;
 }
 
 .figure-left {
-  grid-area: 2 / 3 / 7 / 6;    /* Adjusted for new 11-row grid */
+  grid-area: 2 / 3 / 7 / 8;    /* Swiss: expanded left figure using more width */
+  text-align: left;
 }
 
 

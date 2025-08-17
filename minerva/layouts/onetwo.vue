@@ -26,10 +26,12 @@ import ContentBase from './content-base.vue'
 
 
 .col-left {
-  grid-area: 2 / 2 / 11 / 6;   /* Adjusted for new 11-row grid */
+  grid-area: 2 / 2 / 11 / 8;   /* Swiss: expanded narrow left column using more width */
+  text-align: left;
 }
 .col-right {
-  grid-area: 2 / 6 / 11 / 14;  /* Adjusted for new 11-row grid */
+  grid-area: 2 / 8 / 11 / 17;  /* Swiss: expanded wider right column for asymmetrical layout */
+  text-align: left;
 }
 
 </style>

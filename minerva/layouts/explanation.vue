@@ -25,11 +25,14 @@ import ContentBase from './content-base.vue'
 <style scoped>
 
 .term {
-  grid-area: 3 / 4 / 4 / 12;
+  grid-area: 2 / 2 / 4 / 17;   /* Swiss: full width like definition layout */
+  text-align: left;
 }
 
 .definition {
-  grid-area: 4 / 4 / 9 / 12;
+  grid-area: 4 / 2 / 11 / 15;   /* Swiss: wider, asymmetrical */
+  text-align: left;
+  padding: 0 !important;      /* Remove padding for clean Swiss design */
 }
 
 

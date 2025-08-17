@@ -25,11 +25,16 @@ import ContentBase from './content-base.vue'
 <style scoped>
 
 .figure {
-  grid-area: 2 / 3 / 8 / 13;   /* Adjusted for new 11-row grid */
+  grid-area: 2 / 3 / 8 / 16;   /* Swiss: expanded figure using more width with asymmetrical spacing */
+  border: none !important;     /* Remove decorative borders */
+  border-radius: 0 !important; /* Remove rounded corners */
+  padding: 0 !important;
 }
 
 .text {
-  grid-area: 8 / 3 / 11 / 13;  /* Adjusted for new 11-row grid */
+  grid-area: 8 / 3 / 11 / 16;  /* Swiss: expanded text below figure using more width */
+  text-align: left;
+  font-size: 0.875rem;
 }
 
 

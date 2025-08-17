@@ -27,12 +27,7 @@ import TitleRenderer from "#slidev/title-renderer";
 
 <template>
   <div class="slidev-layout header-footer w-full h-full" :class="layoutClass">
-    <!-- Vertical page title on right margin -->
-    <div class="vertical-page-title">
-      {{ title }}
-    </div>
-
-    <!-- Vertical slide title on left margin (rotated 180 degrees) -->
+    <!-- Vertical slide title on left margin -->
     <div class="vertical-slide-title">
       <TitleRenderer />
     </div>

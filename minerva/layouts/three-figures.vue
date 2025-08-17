@@ -40,31 +40,47 @@ import ContentBase from './content-base.vue'
 <style scoped>
 
 .term {
-  grid-area: 3 / 4 / 4 / 12;
+  grid-area: 2 / 3 / 3 / 15;   /* Swiss: wider term area with asymmetrical spacing */
+  text-align: left;
 }
 
 .figure1 {
-  grid-area: 4 / 2 / 8 / 6;
+  grid-area: 3 / 2 / 8 / 7;    /* Swiss: expanded left figure using more width */
+  border: none !important;     /* Remove decorative borders */
+  border-radius: 0 !important; /* Remove rounded corners */
+  padding: 0 !important;
 }
 
 .text1 {
-  grid-area: 8 / 2 / 11 / 6;
+  grid-area: 8 / 2 / 11 / 7;   /* Swiss: text below left figure, wider */
+  text-align: left;
+  font-size: 0.875rem;
 }
 
 .figure2 {
-  grid-area: 4 / 6 / 8 / 10;
+  grid-area: 3 / 7 / 8 / 12;   /* Swiss: expanded center figure using more width */
+  border: none !important;     /* Remove decorative borders */
+  border-radius: 0 !important; /* Remove rounded corners */
+  padding: 0 !important;
 }
 
 .text2 {
-  grid-area: 8 / 6 / 11 / 10;
+  grid-area: 8 / 7 / 11 / 12;  /* Swiss: text below center figure, wider */
+  text-align: left;
+  font-size: 0.875rem;
 }
 
 .figure3 {
-  grid-area: 4 / 10 / 8 / 14;
+  grid-area: 3 / 12 / 8 / 17;  /* Swiss: expanded right figure using more width */
+  border: none !important;     /* Remove decorative borders */
+  border-radius: 0 !important; /* Remove rounded corners */
+  padding: 0 !important;
 }
 
 .text3 {
-  grid-area: 8 / 10 / 11 / 14;
+  grid-area: 8 / 12 / 11 / 17; /* Swiss: text below right figure, wider */
+  text-align: left;
+  font-size: 0.875rem;
 }
 
 </style>

@@ -61,6 +61,7 @@ Available Layouts
 | `thirds` | Three columns layout |
 | `onetwo` | 1/3 and 2/3 |
 | `one` | Full width layout |
+| `chart` | Chart with title and description |
 
 ---
 layout: definition
@@ -74,9 +75,9 @@ What is Minerva Theme?
 ::definition::
 
 <div class="flex flex-col h-full justify-between p-4">
-  <h3>
+  <h2>
   <span font-bold>Minerva Theme</span> (n.)
-  </h3>
+  </h2>
 
   <div class="italic">
   An opinionated theme for academic talks.
@@ -160,6 +161,38 @@ title: Figure + left text + bottom text
 ## Text on the left
 
 <Arrow v-bind="{ x1:250, y1:280, x2:400, y2:350 }" />
+
+---
+layout: chart
+title: Chart Example
+---
+
+::title::
+# Product Performance Metrics
+
+::chart::
+<script setup>
+const productData = [
+  { category: 'Product A', value1: 45, value2: 12 },
+  { category: 'Product B', value1: 38, value2: 8 },
+  { category: 'Product C', value1: 52, value2: 15 },
+  { category: 'Product D', value1: 29, value2: 6 },
+]
+</script>
+
+<D3Chart 
+  :data="productData"
+  value1-label="Sales"
+  value2-label="Returns"
+  value1-color="#f59e0b"
+  value2-color="#ef4444"
+  :width="500"
+  :height="280"
+  :animation-duration="1000"
+/>
+
+::description::
+D3-powered chart with custom data, colors, and labels - fully configurable component
 
 ---
 layout: onetwo

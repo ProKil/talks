@@ -22,7 +22,8 @@ import ContentBase from './content-base.vue'
 <style scoped>
 
 .col-content {
-  grid-area: 2 / 2 / 11 / 14;   /* Adjusted for new 11-row grid */
+  grid-area: 2 / 2 / 11 / 17;   /* Swiss: single column using most of content area */
+  text-align: left;
 }
 
 </style>

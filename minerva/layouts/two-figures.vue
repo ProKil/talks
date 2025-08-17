@@ -34,23 +34,34 @@ import ContentBase from './content-base.vue'
 <style scoped>
 
 .term {
-  grid-area: 2 / 4 / 3 / 12;
+  grid-area: 2 / 3 / 3 / 15;   /* Swiss: wider term area with asymmetrical spacing */
+  text-align: left;
 }
 
 .figure1 {
-  grid-area: 3 / 3 / 9 / 8;
+  grid-area: 3 / 2 / 9 / 9;    /* Swiss: expanded left figure using more width */
+  border: none !important;     /* Remove decorative borders */
+  border-radius: 0 !important; /* Remove rounded corners */
+  padding: 0 !important;
 }
 
 .text1 {
-  grid-area: 9 / 3 / 11 / 8;
+  grid-area: 9 / 2 / 11 / 9;   /* Swiss: text below left figure, wider */
+  text-align: left;
+  font-size: 0.875rem;
 }
 
 .figure2 {
-  grid-area: 3 / 8 / 9 / 13;
+  grid-area: 3 / 9 / 9 / 17;   /* Swiss: expanded right figure using more width */
+  border: none !important;     /* Remove decorative borders */
+  border-radius: 0 !important; /* Remove rounded corners */
+  padding: 0 !important;
 }
 
 .text2 {
-  grid-area: 9 / 8 / 11 / 13;
+  grid-area: 9 / 9 / 11 / 17;  /* Swiss: text below right figure, wider */
+  text-align: left;
+  font-size: 0.875rem;
 }
 
 </style>
