@@ -20,15 +20,11 @@ import TitleRenderer from '#slidev/title-renderer'
 
 <template>
   <div class="slidev-layout header-footer w-full h-full" :class="layoutClass">
-    <div class="col-header border-b-2">
-      <div class="flex-content font-serif text-3xl text-primary items-end">
-        <div>
-          {{ author }}
-        </div>
-        <div class="italic">
-          {{ title }}
-        </div>
-      </div>
+    <div class="vertical-page-title">
+      {{ title }}
+    </div>
+    <div class="vertical-slide-title">
+      <TitleRenderer />
     </div>
     <div class="col-left" :class="props.class">
       <slot name="left" />
@@ -39,9 +35,6 @@ import TitleRenderer from '#slidev/title-renderer'
     <div class="col-bottom border-t border-primary text-primary" :class="props.class">
       <div class="flex-content">
         <div>
-          <TitleRenderer />
-        </div>
-        <div>
           Page {{ currentPage }}
         </div>
       </div>
@@ -50,31 +43,12 @@ import TitleRenderer from '#slidev/title-renderer'
 </template>
 
 <style scoped>
-.header-footer {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(8, 1fr);
-  gap: 20px;
-}
 
-.flex-content {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.col-header {
-  grid-area: 1 / 1 / 2 / 13;  /* Extended to full width */
-}
 .col-left {
-  grid-area: 2 / 1 / 8 / 7;   /* End at 7 instead of 6 */
+  grid-area: 2 / 2 / 11 / 8;   /* Adjusted for new grid */
 }
 .col-right {
-  grid-area: 2 / 7 / 8 / 13;  /* End at 13 instead of 12 */
+  grid-area: 2 / 8 / 11 / 14;  /* Adjusted for new grid */
 }
-.col-bottom {
-  align-self: end;
-  grid-area: 8 / 1 / 9 / 13;  /* Start at 7 instead of 8, end at 13 */
-}
+
 </style>

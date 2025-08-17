@@ -18,7 +18,7 @@ export default defineConfig({
     presets: [
       presetWebFonts({
         fonts: {
-          sans: 'Geist',
+          sans: 'Jost',
           serif: "EB Garamond",
           hand: 'Playwrite IT Moderna',
           jp: 'Noto Serif JP',

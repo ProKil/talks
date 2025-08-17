@@ -1,9 +1,6 @@
 ---
 theme: ./
 layout: halfnhalf
-font:
-    sans: "Geist"
-    serif: "EB Garamond"
 title: Minerva Theme 
 author: Hao Zhu
 hideInToc: true
@@ -64,6 +61,105 @@ Available Layouts
 | `thirds` | Three columns layout |
 | `onetwo` | 1/3 and 2/3 |
 | `one` | Full width layout |
+
+---
+layout: definition
+title: Definition layout
+---
+::term::
+
+<h2>
+What is Minerva Theme?
+</h2>
+::definition::
+
+<div class="flex flex-col h-full justify-between p-4">
+  <h3>
+  <span font-bold>Minerva Theme</span> (n.)
+  </h3>
+
+  <div class="italic">
+  An opinionated theme for academic talks.
+  </div>
+
+  <div>
+  -- me
+  </div>
+
+</div>
+
+---
+layout: explanation
+title: Explanation layout
+---
+
+::term::
+What is the explanation layout?
+::explanation::
+
+It is very similar to the definition layout, but the goal is to use non-text methods to explain a term.
+
+---
+layout: two-figures
+title: 2 Figures Layout
+---
+
+::term::
+# Two figures layout
+
+::text1::
+<h2 text-center>
+The first Figure
+</h2>
+
+::text2::
+<h2 text-center>
+The second Figure
+</h2>
+
+---
+layout: three-figures
+title: 3 Figures Layout
+---
+
+::term::
+# Three figures layout
+
+::text1::
+<h2 text-center>
+The first Figure
+</h2>
+
+::text2::
+<h2 text-center>
+The second Figure
+</h2>
+
+::text3::
+<h2 text-center>
+The third Figure
+</h2>
+
+---
+layout: figure-bottom
+title: Figure Bottom Text
+---
+
+::text::
+# This is the text below the figure
+
+---
+layout: figure-bottom-left
+title: Figure + left text + bottom text
+---
+
+::text::
+# This is the text below the figure
+
+::figure-left::
+## Text on the left
+
+<Arrow v-bind="{ x1:250, y1:280, x2:400, y2:350 }" />
 
 ---
 layout: onetwo

@@ -26,8 +26,11 @@ import TitleRenderer from '#slidev/title-renderer'
     <div class="vertical-slide-title">
       <TitleRenderer />
     </div>
-    <div class="col-content" :class="props.class">
-      <slot name="default" />
+    <div class="term" :class="props.class">
+      <slot name="term" />
+    </div>
+    <div class="definition border rounded-lg px-2 font-serif" :class="props.class" >
+      <slot name="definition" />
     </div>
     <div class="col-bottom border-t border-primary text-primary" :class="props.class">
       <div class="flex-content">
@@ -41,8 +44,13 @@ import TitleRenderer from '#slidev/title-renderer'
 
 <style scoped>
 
-.col-content {
-  grid-area: 2 / 2 / 11 / 14;   /* Adjusted for new 11-row grid */
+.term {
+  grid-area: 3 / 4 / 4 / 12;
 }
+
+.definition {
+  grid-area: 4 / 4 / 9 / 12;
+}
+
 
 </style>
